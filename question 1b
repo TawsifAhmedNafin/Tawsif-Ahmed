@@ -1,0 +1,15 @@
+num_str = "123"
+num_int = int(num_str)
+print(num_int)
+
+num = 456
+num_string = str(num)
+print(num_string)
+
+float_num = 3.99
+int_num = int(float_num)
+print(int_num)
+# The decimal part is removed (not rounded)
+
+print(bool(1))  # True
+print(bool(0))  # False
