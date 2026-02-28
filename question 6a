@@ -1,0 +1,23 @@
+# 1 to 20
+for i in range(1, 21):
+    print(i)
+
+# Multiplication table of 7
+for i in range(1, 11):
+    print("7 x", i, "=", 7 * i)
+
+# Sum of 1 to 100
+total = 0
+for i in range(1, 101):
+    total += i
+print("Sum:", total)
+
+# Even numbers 1 to 50
+for i in range(2, 51, 2):
+    print(i)
+
+# Fruits with position
+fruits = ['apple', 'banana', 'cherry', 'mango', 'grape']
+
+for i in range(len(fruits)):
+    print(i+1, fruits[i])
