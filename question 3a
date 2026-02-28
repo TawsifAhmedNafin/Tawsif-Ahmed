@@ -1,0 +1,6 @@
+name = "python programming"
+
+print(name.upper())
+print(name.title())
+print(name.replace("programming", "language"))
+print(len(name))
