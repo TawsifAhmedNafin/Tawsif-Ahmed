@@ -1,0 +1,22 @@
+username = "admin"
+password = "1234"
+
+attem = 3
+
+while attem > 0:
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+
+    if username == "admin" and password == "1234":
+        print(f"Login successful! Welcome, {username}.")
+        break
+    elif username == "admin":
+        print("Incorrect password. Try again.")
+    else:
+        print("User not found.")
+
+    attem -= 1
+    print("Attempts remaining:", attem)
+
+if attem == 0:
+    print("Account locked.")
