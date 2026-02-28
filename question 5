@@ -1,0 +1,40 @@
+# Login System
+username = "admin"
+password = "1234"
+is_active = True
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if not is_active:
+    print("Dear Sir,Your Account is disabled due to wrong credentials.")
+elif username == "admin" and password == "1234":
+
+    # For ATM Section
+    pinNumber = "1111"
+    balance = 10000
+    atte= 3
+
+    while atte > 0:
+        pin = input("Enter PIN: ")
+
+        if pin == pinNumber:
+            request = int(input("Enter withdrawal amount: "))
+
+            if request > balance:
+                print("Insufficient balance.")
+            elif request <= 500:
+                print("Minimum withdrawal is greater than 500.")
+            else:
+                balance -= request
+                print("Withdrawal successful.")
+                print("Remaining balance:", balance)
+            break
+        else:
+            atte -= 1
+            print("Wrong pin. Attempts remaining:", atte)
+
+    if atte == 0:
+        print("Card blocked!")
+else:
+    print("Login failed.")
