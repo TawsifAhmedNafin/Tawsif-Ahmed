@@ -1,5 +1,3 @@
-print(" ")
-
 num = int(input("Enter a number to check Even/Odd: "))
 
 if num % 2 == 0:
